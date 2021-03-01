@@ -21,8 +21,7 @@ with open('/sample_input.txt', 'r') as fd:
           dict[row[0].split(':')[0]] = int(row[0].split(':')[1])
         print(row[0].split(':'))
 
-from google.colab import drive
-drive.mount('/content/drive')
+
 
 sorted_values = sorted(dict.values()) # Sort the values
 sorted_dict = {}
